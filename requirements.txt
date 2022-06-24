@@ -1,0 +1,6 @@
+streamlit
+tensorflow
+keras
+numpy
+plotly
+Pillow==9.1.1
