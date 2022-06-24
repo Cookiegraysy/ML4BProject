@@ -1,13 +1,10 @@
 import os
-
-
 import streamlit as st
 import plotly.express as px
-import predictor
-
+from helpers import predictor
 
 def app():
-    st.write("# Project Garbage Classification")
+    st.write("# Project garbAIge")
 
     st.write("## Upload Image in .jpg format")
     uploaded_image = st.file_uploader("", type=["jpg"])
@@ -24,22 +21,20 @@ def app():
 
             labels = {0: 'cardboard', 1: 'glass', 2: 'metal', 3: 'paper', 4: 'plastic', 5: 'trash'}
 
-            classes = []
-            prob = []
-            for i, j in enumerate(prediction[0], 0):
+            classes=[]
+            prob=[]
+            for i,j in enumerate (prediction[0], 0):
                 classes.append(labels[i].capitalize())
-                prob.append(round(j * 100, 2))
+                prob.append(round(j*100,2))
 
             fig = px.bar(x=classes, y=prob,
                          text=prob, color=classes,
-                         labels={"x": "Material", "y": "Probability(%)"})
+                         labels={"x":"Material", "y":"Probability(%)"})
 
             st.markdown("#### Probability Distribution Bar Chart", True)
             st.plotly_chart(fig)
 
-            st.markdown(
-                f"#### The Image Is Classified As`{predicted_class.capitalize()}` With A Probability Of `{max(prob)}%`",
-                True)
-
+            st.markdown(f"#### The Image Is Classified As`{predicted_class.capitalize()}` With A Probability Of `{max(prob)}%`", True)
+            
     else:
         st.write("#### No Image Was Found, Please Retry!!!")
