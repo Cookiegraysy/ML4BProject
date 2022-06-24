@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import plotly.express as px
-from helpers import predictor
+import predictor
 
 def app():
     st.write("# Project garbAIge")
