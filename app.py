@@ -1,7 +1,7 @@
 from pages import information, model
 import streamlit as st
-# Page Settings
 
+# Page Settings
 st.set_page_config(page_title="Garbage Classification")
 
 # Use local CSS
@@ -34,7 +34,7 @@ PAGES = {
     "About The Project": information
 }
 
-st.sidebar.title('Garbage Classification')
-selection = st.sidebar.radio("Navigate To", list(PAGES.keys()))
-page = PAGES[selection]
+//st.sidebar.title('Garbage Classification')
+//selection = st.sidebar.radio("Navigate To", list(PAGES.keys()))
+//page = PAGES[selection]
 page.app()
