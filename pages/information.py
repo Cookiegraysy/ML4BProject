@@ -18,8 +18,4 @@ def app():
 
     st.markdown("<hr/>", True)
 
-    # st.subheader("Description:")
-    # st.markdown("This Project uses `Fine Tuned InceptionV3 Model` which is a Pre-Trained CNN Model from Keras.", True)
-    # st.markdown("It Gave the `Highest Accuracy of 96%` while classifying image from test set.", True)
-    #
-    # st.markdown("<hr/>", True)
+
