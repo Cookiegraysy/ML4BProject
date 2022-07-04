@@ -34,7 +34,4 @@ PAGES = {
     "About The Project": information
 }
 
-//st.sidebar.title('Garbage Classification')
-//selection = st.sidebar.radio("Navigate To", list(PAGES.keys()))
-//page = PAGES[selection]
-page.app()
+PAGES.app()
