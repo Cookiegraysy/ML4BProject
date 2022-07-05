@@ -106,18 +106,6 @@ def app():
     ''')
 
 
-    st.subheader("Assess Model: ")
-    st.code('''
-    plt.plot(history.history['accuracy'], label='accuracy')
-    plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.ylim([0.5, 1])
-    plt.legend(loc='lower right')
-    plt.show()
-    test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
-    ''')
-
     st.subheader("Test Predictions: ")
     st.markdown(
         "ToDo ",
