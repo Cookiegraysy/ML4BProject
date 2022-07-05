@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 import predictor
 
-def app():
+#def app():
     st.write("# Project garbAIge")
 
     st.write("## Upload Image in .jpg format")
