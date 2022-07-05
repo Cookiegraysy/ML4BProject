@@ -1,4 +1,4 @@
-from pages import information,Business_Understanding, model_demo, Modeling, Evaluation
+from pages import information,Business_Understanding, Data_preparation, Data_Understanding, model_demo, Modeling, Evaluation
 import streamlit as st
 
 # Page Settings
@@ -33,6 +33,8 @@ PAGES = {
     "Model Demo": model_demo,
     "About The Project": information,
     "Business Understanding": Business_Understanding,
+    "Data Understanding": Data_Understanding,
+    "Data Preparation": Data_preparation,
     "Modeling": Modeling,
     "Evaluation": Evaluation
 }
