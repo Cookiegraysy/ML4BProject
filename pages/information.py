@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 
-def app():
+#def app():
     st.title("Project Garbage Classification")
 
     st.subheader("Objective: ")
