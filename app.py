@@ -1,4 +1,4 @@
-from pages import information, model
+from pages import information, model-demo
 import streamlit as st
 
 # Page Settings
@@ -30,7 +30,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 PAGES = {
-    "Model Demo": model,
+    "Model Demo": model-demo,
     "About The Project": information
 }
 
