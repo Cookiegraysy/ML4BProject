@@ -1,4 +1,4 @@
-from pages import information, model_demo, Modeling, Evaluation
+from pages import information, model_demo, Business_Understanding, Modeling, Evaluation
 import streamlit as st
 
 # Page Settings
