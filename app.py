@@ -1,4 +1,4 @@
-from pages import information, model_demo, Business_Understanding, Modeling, Evaluation
+from pages import information, model_demo, Modeling, Evaluation
 import streamlit as st
 
 # Page Settings
@@ -32,7 +32,7 @@ st.markdown(
 PAGES = {
     "Model Demo": model_demo,
     "About The Project": information,
-    "Business Understanding: Business_Understanding,
+    #"Business Understanding: Business_Understanding,
     "Modeling": Modeling,
     "Evaluation": Evaluation
 }
