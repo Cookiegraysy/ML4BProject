@@ -3,8 +3,8 @@ import streamlit as st
 import plotly.express as px
 import predictor
 
-#def app():
-    st.write("# Project garbAIge")
+def app():
+    st.write("# Garbage Classification")
 
     st.write("## Upload Image in .jpg format")
     uploaded_image = st.file_uploader("", type=["jpg"])
