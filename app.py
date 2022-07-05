@@ -1,4 +1,4 @@
-from pages import information, model_demo
+from pages import information, model_demo, Modeling, Evaluation
 import streamlit as st
 
 # Page Settings
@@ -32,6 +32,8 @@ st.markdown(
 PAGES = {
     "Model Demo": model_demo,
     "About The Project": information
+    "Modeling": Modeling,
+    "Evaluation": Evaluation
 }
 
 st.sidebar.title('Garbage Classification')
