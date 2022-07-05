@@ -32,6 +32,7 @@ st.markdown(
 PAGES = {
     "Model Demo": model_demo,
     "About The Project": information,
+    "Business Understanding: Business_Understanding,
     "Modeling": Modeling,
     "Evaluation": Evaluation
 }
