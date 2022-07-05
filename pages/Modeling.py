@@ -78,7 +78,7 @@ def app():
         True)
     st.code('''
     model.compile(optimizer = 'Adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
-    model.fit_generator(train_generator,
+    history = model.fit(train_generator,
           epochs=10,
           steps_per_epoch=2184//32)
     ''')
