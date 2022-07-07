@@ -95,8 +95,8 @@ def plastic():
 def update():
   if result is "Cardboard":
     st.write(cardboard())
-  elif result is "Glas":
-    st.write(glas())
+  elif result is "Glass":
+    st.write(glass())
   elif result is "Metal":
     st.write(metal())
   elif result is "Paper":
