@@ -81,6 +81,15 @@ _________________________________________________________________
 st.markdown("<hr/>", True)
 
 st.subheader("Model Compilation and Training: ")
+st.code('''
+
+model.compile(optimizer = 'Adam', loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+history = model.fit(train_generator,
+          epochs=10,
+          steps_per_epoch=2184//32,
+          validation_data= test_generator)
+
+''')
 st.image("./visualize/training.jpg")
 
 
