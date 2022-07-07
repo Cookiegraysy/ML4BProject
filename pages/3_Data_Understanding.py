@@ -1,6 +1,7 @@
 import streamlit as st
 import pathlib
 import os
+from PIL import Image
 
 st.title("Data Understanding")
 st.subheader("Collect Initial Data:")
