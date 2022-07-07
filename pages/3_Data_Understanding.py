@@ -34,7 +34,7 @@ st.subheader("Explore the Data:")
 option = st.selectbox('Choose an image', ('cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash' ))
 
 
-type_path = os.path.join(dir + 'Garbage classification/Garbage classification/', option)
+type_path = os.path.join(dir + 'ML4BProject/Dataset/', option)
 list_of_images = os.listdir(type_path)
 image_box = st.selectbox("Sample", list_of_images)
 sample_path = os.path.join(type_path, image_box)
