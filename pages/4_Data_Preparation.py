@@ -1,6 +1,7 @@
 import streamlit as st
 import pathlib
 import os
+from PIL import Image
 
 st.title("Data Preparation")
 st.subheader("Data Cleaning")
@@ -20,7 +21,7 @@ for label in os.listdir(data_dir):
     samples = os.listdir(directory)
 
     for img in samples:
-        z = Image.open(os.path.join(directory, Dataset))
+        z = Image.open(os.path.join(directory, img))
         x = {'Training set': img, 'category': label, 'size': z.size}
         dicts.append(x)
 
@@ -32,7 +33,7 @@ for label in os.listdir(data_dir2):
     samples = os.listdir(directory)
 
     for img in samples:
-        z = Image.open(os.path.join(directory, Dataset))
+        z = Image.open(os.path.join(directory, img))
         x = {'Test set': img, 'category': label, 'size': z.size}
         dicts.append(x)
 
