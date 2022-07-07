@@ -27,6 +27,7 @@ for label in os.listdir(data_dir):
         dicts.append(x)
 
 df1 = pd.DataFrame.from_dict(dicts)
+training_count = df1[['Training set', 'category']].groupby('category').count()
 
 #Test set
 for label in os.listdir(data_dir2):
@@ -39,8 +40,8 @@ for label in os.listdir(data_dir2):
         dicts.append(x)
 
 df2 = pd.DataFrame.from_dict(dicts)
-
+test_count = df2[['Test set', 'category']].groupby('category').count()
 #Combine Sets
-result = pd.concat([df1, df2], axis=1, ignore_index=True)
+result = pd.concat([training_count, test_count], axis=1, ignore_index=True)
 
 st.write(result)
