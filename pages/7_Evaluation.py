@@ -68,7 +68,7 @@ def paper():
   st.write("Sample 2")
   st.image("./Results_img/paper2.jpg")
   st.write("Evaluation")
-  #st.image(".Results/paper2_zeitung_plot.png")
+  st.image("./Results/paper2_zeitung_plot.png")
   st.write("Sample 3")
   st.image("./Results_img/paper3.jpg")
   st.write("Evaluation")
