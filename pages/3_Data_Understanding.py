@@ -18,7 +18,7 @@ classes = os.listdir(dir_address)
 print(classes)
 ''')
 
-st.subheader("Describe Data:")
+st.subheader("Describe the Data:")
 st.markdown("Our dataset consists of five different materials: cardboard, glass, metal, paper, plastic and trash.")
 st.markdown("To display the splitting of the garbage types, we used the following code: ")
 
@@ -28,3 +28,15 @@ dir_address = "D:/Garbage-Classification/Dataset/train"
 train_classes = os.listdir(dir_address)
 print(train_classes)
 ''')
+
+st.subheader("Explore the Data:")
+
+option = st.selectbox('Choose an image', ('cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash' ))
+
+
+type_path = os.path.join(dir + 'Garbage classification/Garbage classification/', option)
+list_of_images = os.listdir(type_path)
+image_box = st.selectbox("Sample", list_of_images)
+sample_path = os.path.join(type_path, image_box)
+image = Image.open(sample_path)
+st.image(image, caption=image_box)
