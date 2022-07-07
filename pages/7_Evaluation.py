@@ -7,7 +7,7 @@ st.title("Evaluation")
 st.header("Internet Samples")
 st.markdown("We have uploaded a few examples of each category from the internet into our app.")
 
-categories = ["Select Category", "Cardboard", "Glass", "Metal", "Paper", "Plastic"]
+categories = ["Select Category", "Cardboard", "Glas", "Metal", "Paper", "Plastic"]
 result = st.selectbox("Select a Category", categories)
 
 def cardboard():
@@ -20,7 +20,7 @@ def cardboard():
   st.write("Evaluation")
   st.image("./Results/cardboard2_amazon.png")
 
-def glass():
+def glas():
   st.write("Sample 1")
   st.image("./Results_img/Glas2_gruen.jpg")
   st.write("Evaluation")
@@ -95,13 +95,13 @@ def plastic():
 def update():
   if result is "Cardboard":
     st.write(cardboard())
-  elif categories is "Glass":
-    st.write(glass())
-  elif categories is "Metal":
+  elif result is "Glas":
+    st.write(glas())
+  elif result is "Metal":
     st.write(metal())
-  elif categories is "Paper":
+  elif result is "Paper":
     st.write(paper())
-  elif categories is "Plastic":
+  elif result is "Plastic":
     st.write(plastic())
 
 if st.button(""):
