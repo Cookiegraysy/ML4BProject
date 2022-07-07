@@ -9,3 +9,7 @@ st.markdown("We have uploaded a few examples of each category from the internet 
 
 categories = ["Select Category", "Cardboard", "Glass", "Metal", "Paper", "Plastic"]
 result = st.selectbox("Select a Category", categories)
+st.write(https://www.hausjournal.net/wp-content/uploads/Pappe-zerkleinern.jpg)
+def cardboard():
+  st.write("Sample 1")
+  st.write(https://www.hausjournal.net/wp-content/uploads/Pappe-zerkleinern.jpg)
