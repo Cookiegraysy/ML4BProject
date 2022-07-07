@@ -4,4 +4,8 @@ import os
 import panda as pd
 
 st.title("Evaluation")
-st.selectbox("Samples of: ", ("
+st.headline("Internet Samples")
+st.markdown("We have uploaded a few examples of each category from the internet into our app.")
+
+categories = ["Select Category", "Cardboard", "Glass", "Metal", "Paper", "Plastic"]
+result = st.selectbox("Select a Category", categories)
