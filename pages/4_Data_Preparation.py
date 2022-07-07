@@ -44,5 +44,5 @@ test_count = df2[['Test set', 'category']].groupby('category').count()
 
 #Combine Sets
 result = pd.concat([training_count, test_count], axis=1, ignore_index=true)
+#st.write(result)
 result
-st.write(result)
