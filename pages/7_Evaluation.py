@@ -12,7 +12,7 @@ dir2 = './Result/'
 
 categories = ["Select Category", "Cardboard", "Glass", "Metal", "Paper", "Plastic"]
 result = st.selectbox("Select a Category", categories)
-st.write(./Result_img/cardboard1.jpg)
+./Result_img/cardboard1.jpg
 
 def cardboard():
   st.write("Sample 1")
