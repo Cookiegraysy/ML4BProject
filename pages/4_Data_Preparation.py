@@ -43,6 +43,6 @@ df2 = pd.DataFrame.from_dict(dicts)
 test_count = df2[['Test set', 'category']].groupby('category').count()
 
 #Combine Sets
-result = pd.concat([training_count, test_count], axis=1, ignore_index=false)
-
+result = pd.concat([training_count, test_count], axis=1, ignore_index=true)
+result
 st.write(result)
