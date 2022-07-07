@@ -104,5 +104,5 @@ def update():
   elif result is "Plastic":
     st.write(plastic())
 
-if st.button(""):
+if st.button("Show samples"):
   update()
