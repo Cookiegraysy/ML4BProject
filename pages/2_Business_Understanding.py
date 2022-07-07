@@ -11,4 +11,3 @@ st.markdown("The app can also be used by garbage collection points. In this way,
 st.subheader("Risks:")
 st.markdown("Chances are that the app will misclassify the garbage and therefore the garbage might end up in a garbage can where it doesn't actually belong.")
 st.subheader("Project Plan:")
-st.image()
