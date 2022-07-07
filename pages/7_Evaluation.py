@@ -92,7 +92,7 @@ def plastic():
   st.write("Evaluation")
   st.image(".Results/plastic_tuete_b_plot.png")
 
-if categories is "Cardboard":
+if result is "Cardboard":
   st.write(cardboard())
 elif categories is "Glas":
   st.write(glas())
