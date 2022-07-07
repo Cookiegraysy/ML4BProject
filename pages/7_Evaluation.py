@@ -11,13 +11,13 @@ categories = ["Select Category", "Cardboard", "Glas", "Metal", "Paper", "Plastic
 result = st.selectbox("Select a Category", categories)
 
 def cardboard():
-  st.write("Sample 1")
+  st.subheader("Sample 1")
   st.image("./Results_img/cardboard1.jpg")
-  st.write("Evaluation")
+  st.subheader("Evaluation")
   st.image("./Results/cardboard_plot.png")
-  st.write("Sample 2")
+  st.subheader("Sample 2")
   st.image("./Results_img/cardboard2.jpg")
-  st.write("Evaluation")
+  st.subheader("Evaluation")
   st.image("./Results/cardboard2_amazon.png")
 
 def glas():
