@@ -20,7 +20,7 @@ for label in os.listdir(data_dir):
     samples = os.listdir(directory)
 
     for img in samples:
-        z = Image.open(os.path.join(directory, training))
+        z = Image.open(os.path.join(directory, Training Set))
         x = {'Training set': img, 'category': label, 'size': z.size}
         dicts.append(x)
 
