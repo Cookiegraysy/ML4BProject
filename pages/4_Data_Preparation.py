@@ -2,6 +2,7 @@ import streamlit as st
 import pathlib
 import os
 from PIL import Image
+import pandas as pd
 
 st.title("Data Preparation")
 st.subheader("Data Cleaning")
