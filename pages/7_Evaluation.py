@@ -92,5 +92,13 @@ def plastic():
   st.write("Evaluation")
   st.image(".Results/plastic_tuete_b_plot.png")
 
-
-  
+if categories is "Cardboard":
+  st.write(cardboard())
+elif categories is "Glas":
+  st.write(glas())
+elif categories is "Metal":
+  st.write(metal())
+elif categories is "Paper":
+  st.write(paper())
+elif categories is "Plastic":
+  st.write(plastic())
