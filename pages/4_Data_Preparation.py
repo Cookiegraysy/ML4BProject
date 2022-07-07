@@ -20,7 +20,7 @@ for label in os.listdir(data_dir):
     samples = os.listdir(directory)
 
     for img in samples:
-        z = Image.open(os.path.join(directory, img))
+        z = Image.open(os.path.join(directory, training))
         x = {'Training set': img, 'category': label, 'size': z.size}
         dicts.append(x)
 
@@ -32,7 +32,7 @@ for label in os.listdir(data_dir2):
     samples = os.listdir(directory)
 
     for img in samples:
-        z = Image.open(os.path.join(directory, img))
+        z = Image.open(os.path.join(directory, test))
         x = {'Test set': img, 'category': label, 'size': z.size}
         dicts.append(x)
 
