@@ -13,7 +13,7 @@ st.markdown("<hr/>", True)
 
 st.subheader("About us: ")
 st.markdown(
-    "Hello, we are Jan, Narin and Siyu. We are student of business informatics and are happy to attend the course ML4B and learn more about the world of machine learning. ",
+    "Hello, we are Jan, Narin and Siyu. We are students of business informatics and are happy to attend the course ML4B and learn more about the world of machine learning. ",
     True)
 
 st.markdown("<hr/>", True)
