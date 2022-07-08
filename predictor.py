@@ -27,7 +27,7 @@ def predict(img):
     prediction = model.predict(img[np.newaxis, ...])
 
     # Label array
-    labels = {0: 'glass', 1: 'metal', 2: 'paper', 3: 'plastic', 4: 'trash'}
+    labels = {0: 'cardboard', 1: 'glass', 2: 'metal', 3: 'paper', 4: 'plastic', 5: 'trash'}
 
     # Predicted Class
     predicted_class = labels[np.argmax(prediction[0], axis=-1)]
