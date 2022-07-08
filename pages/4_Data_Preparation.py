@@ -8,7 +8,7 @@ st.title("Data Preparation")
 st.subheader("Data Cleaning")
 st.markdown("The Dataset is in a good condition. Therefore no cleaning had to be done.")
 st.subheader("Data Split")
-st.markdown("We've split the Dataset into a Training and Test set. We split about 15% of each category and moved it to the test set and the remaing pictures we left as the training set.")
+st.markdown("We've split the Dataset into a Training and Test set. We split about 15% of each category and moved it to the test set and the remaing pictures were left as the training set.")
 
 dir = './Dataset/'
 data_dir = pathlib.Path(os.path.join(dir, './train/'))
